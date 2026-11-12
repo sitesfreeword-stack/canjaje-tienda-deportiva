@@ -1,0 +1,47 @@
+.product-shirt.product-ball.soccerball{background:radial-gradient(circle at 32% 26%,#fff 0,#f6f3e8 45%,#b7c0b5 100%)}
+.product-shirt.product-ball.soccerball:before{inset:0 31%;border:0;background:linear-gradient(90deg,transparent 42%,#202a25 43% 47%,transparent 48% 53%,#202a25 54% 58%,transparent 59%);transform:rotate(30deg)}
+.product-shirt.product-ball.soccerball:after{inset:25% 0;border:0;border-top:3px solid #202a25;border-bottom:3px solid #202a25;border-radius:50%;transform:rotate(-25deg)}
+.product-shirt.product-ball.soccerball.prisma{background:conic-gradient(#f3eee0 0 14%,#c9f45b 14% 22%,#f3eee0 22% 38%,#ff7048 38% 46%,#f3eee0 46% 63%,#267caa 63% 71%,#f3eee0 71%)}
+.product-shirt.product-ball.soccerball.street{background:radial-gradient(circle at 35% 28%,#e9ff9b,#c6f052 50%,#789527)}
+.product-shirt.product-marker{width:150px;height:58px;clip-path:polygon(0 36%,54% 36%,60% 0,76% 0,81% 34%,100% 34%,100% 56%,78% 56%,74% 100%,58% 100%,55% 58%,0 58%);background:linear-gradient(180deg,#47544c,#202923 50%,#151a17);transform:rotate(-7deg)}
+.product-shirt.product-marker:before{top:-6%;left:59%;width:18%;height:31%;border:0;border-radius:0;background:#cbf45b}
+.product-shirt.product-marker:after{content:"CJ";top:29%;font:800 12px var(--body);color:#cbf45b}
+.product-shirt.product-marker .band{display:none}
+.product-shirt.product-mask{width:145px;height:84px;clip-path:polygon(0 20%,20% 5%,80% 5%,100% 20%,90% 84%,74% 100%,26% 100%,10% 84%);background:linear-gradient(180deg,#46534b,#1a211d);transform:rotate(-5deg)}
+.product-shirt.product-mask:before{top:27%;left:12%;width:76%;height:43%;border:0;border-radius:10px;background:linear-gradient(90deg,#93b7ae 0 43%,#111916 44% 56%,#93b7ae 57%);opacity:.85}
+.product-shirt.product-mask:after{content:"PRO";top:75%;font:800 8px var(--body);color:#cbf45b;letter-spacing:.12em}
+.product-shirt.product-mask .band{display:none}
+.product-shirt.product-vest{width:118px;height:145px;clip-path:polygon(18% 0,39% 8%,61% 8%,82% 0,100% 16%,84% 42%,76% 37%,76% 100%,24% 100%,24% 37%,16% 42%,0 16%);background:repeating-linear-gradient(90deg,#27322c 0 25px,#3b4b40 25px 33px);transform:rotate(4deg)}
+.product-shirt.product-vest:before{top:8%;left:40%;width:20%;height:14%;border:2px solid #68766b;border-bottom:0}
+.product-shirt.product-vest:after{content:"CJ";top:45%;font-size:24px;color:#cbf45b}
+.product-shirt.product-vest .band{display:none}
+.product-shirt.product-pods{width:140px;height:95px;clip-path:none;background:transparent;box-shadow:none;transform:rotate(-6deg)}
+.product-shirt.product-pods:before,.product-shirt.product-pods:after{content:"";position:absolute;top:12%;left:5%;width:23%;height:78%;border:0;border-radius:8px 8px 11px 11px;background:linear-gradient(90deg,#303b34,#56645a 48%,#27312b);box-shadow:36px 0 #303b34,72px 0 #56645a}
+.product-shirt.product-pods:after{top:5%;left:5%;width:23%;height:12%;border-radius:3px;background:#cbf45b;box-shadow:36px 0 #ff7048,72px 0 #cbf45b}
+.product-shirt.product-pods .band{display:none}
+.product-description{font-size:9px;line-height:1.55;color:#aeb8ae;margin:8px 0 12px}
+.booking-section{padding:86px 0;background:linear-gradient(115deg,#151c18,#1c2920 60%,#17201b);border-block:1px solid #344239;position:relative;overflow:hidden}
+.booking-section:after{content:"BOOK / PLAY";position:absolute;right:-20px;bottom:-58px;color:#ffffff06;font:900 clamp(90px,15vw,210px)/.8 var(--display);pointer-events:none}
+.booking-layout{display:grid;grid-template-columns:.95fr 1.05fr;gap:8vw;align-items:center;position:relative;z-index:1}
+.booking-intro h2{font:900 clamp(64px,8vw,96px)/.78 var(--display);margin:14px 0 24px}
+.booking-intro h2 em{color:var(--orange);font-style:normal}
+.booking-intro>p:not(.section-kicker){font-size:12px;line-height:1.75;color:#bac4ba;max-width:410px}
+.booking-sports{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:24px 0 0}
+.booking-sports li{padding:7px 10px;border:1px solid #536258;color:#dce3d9;font-size:9px;letter-spacing:.06em}
+.booking-form{background:#222d26;border:1px solid #46544a;padding:25px}
+.booking-form-title{display:flex;justify-content:space-between;gap:15px;font:800 24px/1 var(--display);margin:0 0 22px}
+.booking-form-title span{align-self:center;color:var(--lime);font:700 8px var(--body);letter-spacing:.1em}
+.booking-form label{display:block;margin:0 0 7px;color:#cbd3ca;font-size:9px;font-weight:700;letter-spacing:.06em}
+.booking-form .form-control,.booking-form .form-select{min-height:43px;background-color:#17201b;border:1px solid #435047;color:var(--paper);border-radius:0;font-size:11px;box-shadow:none}
+.booking-form .form-control:focus,.booking-form .form-select:focus{border-color:var(--lime);box-shadow:0 0 0 2px #cbf45b22}
+.booking-form .form-select option{background:#17201b;color:var(--paper)}
+.booking-form>label:not(:first-child){margin-top:14px}
+.booking-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.booking-submit{width:100%;margin-top:18px}
+.booking-submit span{float:right}
+.booking-disclaimer{font-size:8px;line-height:1.55;color:#98a398;margin:13px 0 0}
+.booking-status{margin-top:15px;padding:12px;border-left:3px solid var(--lime);background:#18231c;color:#e4f5cc;font-size:10px;line-height:1.5}
+.booking-status-conflict{border-left-color:var(--orange);color:#ffcab9}
+@media(max-width:800px){.booking-layout{grid-template-columns:1fr;gap:32px}.booking-intro h2{font-size:74px}.booking-section{padding:65px 0}}
+@media(max-width:575px){.booking-form{padding:19px 15px}.booking-form-title{font-size:21px}.booking-form-title span{font-size:7px}.booking-fields{gap:8px}.booking-fields .form-select,.booking-fields .form-control{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.booking-section:after{display:none}}

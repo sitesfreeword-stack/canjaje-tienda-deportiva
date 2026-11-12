@@ -1,0 +1,15 @@
+.space-card-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s,filter .35s}
+.space-card:hover .space-card-photo{transform:scale(1.06);filter:saturate(1.12)}
+.space-photo-badge{position:absolute;right:9px;bottom:9px;z-index:2;padding:5px 7px;background:#111914bd;color:#d9edca;font-size:7px!important;letter-spacing:.1em;font-weight:800}
+.space-photo-wrap{position:absolute;inset:0;z-index:2;margin:0;background:#101713}
+.space-photo-wrap img{width:100%;height:100%;object-fit:cover}
+.space-photo-wrap figcaption{position:absolute;right:12px;bottom:12px;padding:7px 10px;background:#111914df;font-size:8px}
+.space-photo-wrap a{color:var(--lime);text-decoration:none}
+.space-photo-wrap a:hover{text-decoration:underline}
+.view-photo .stage-lights,.view-photo .stage-stands{opacity:0}
+.product-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s,filter .35s}
+.product-card:hover .product-photo{transform:scale(1.05);filter:saturate(1.08)}
+.product-photo-credit{position:absolute;left:9px;bottom:9px;z-index:3;background:#101713d9;padding:5px 7px;color:#e0e8dc;font-size:7px;letter-spacing:.04em;text-decoration:none}
+.product-photo-credit:hover{color:var(--lime)}
+.product-art:has(.product-photo) .art-label{top:12px;bottom:auto;left:auto;right:9px}
+.product-photo-credit:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
