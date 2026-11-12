@@ -1,5 +1,6 @@
 const products = [
   {id:'colombia-26',name:'Colombia · Tricolor',subtitle:'Fútbol · Concepto de afición',category:'futbol',price:89900,color:'#f6cf35',mark:'#263523',band:'#1e3d8a',number:'10',tag:'SELECCIONES',pattern:'pattern-colombia'},
+  {id:'guayos-futbol',name:'Guayos de fútbol Volt',subtitle:'Calzado deportivo · Campo de césped',category:'futbol',extraCategories:['calzado'],price:189900,color:'#c6f052',mark:'#202a25',band:'#ff7048',number:'',tag:'CALZADO',image:'assets/images/football-cleats.jpg',imageAlt:'Guayo deportivo verde sobre césped durante un entrenamiento',photoCredit:'Muhammed Ali Önem · Pexels',photoUrl:'https://www.pexels.com/photo/close-up-of-football-boots-on-grass-field-32962876/',description:'Referencia visual de calzado con taches para jugar fútbol en césped. Producto y precio de muestra.'},
   {id:'brasil-26',name:'Brasil · Jogo',subtitle:'Fútbol · Concepto de afición',category:'futbol',price:89900,color:'#f6d83b',mark:'#17643c',band:'#187345',number:'10',tag:'SELECCIONES',pattern:'pattern-brasil'},
   {id:'argentina-26',name:'Argentina · Celeste',subtitle:'Fútbol · Concepto de afición',category:'futbol',price:89900,color:'#73c8e8',mark:'#254552',band:'#f4eee1',number:'10',tag:'SELECCIONES',pattern:'pattern-argentina'},
   {id:'mexico-26',name:'México · Verde',subtitle:'Fútbol · Concepto de afición',category:'futbol',price:89900,color:'#176c48',mark:'#f1eee1',band:'#d9413e',number:'10',tag:'SELECCIONES',pattern:'pattern-mexico'},
@@ -10,6 +11,7 @@ const products = [
   {id:'atletismo-pista',name:'Pista libre',subtitle:'Atletismo · Camiseta de entrenamiento',category:'atletismo',price:62900,color:'#202722',mark:'#cbf45b',band:'#ff7048',number:'04',tag:'ATLETISMO'},
   {id:'voleibol-punto',name:'Punto arriba',subtitle:'Voleibol · Camiseta de juego',category:'voleibol',price:69900,color:'#e8e4d9',mark:'#202a25',band:'#ff7048',number:'07',tag:'VOLEIBOL'},
   {id:'tenis-rally',name:'Rally abierto',subtitle:'Tenis · Camiseta deportiva',category:'tenis',price:68900,color:'#c6e562',mark:'#1d2a20',band:'#f3eee0',number:'05',tag:'TENIS'},
+  {id:'tenis-deportivos',name:'Tenis Court Motion',subtitle:'Calzado deportivo · Tenis de cancha',category:'tenis',extraCategories:['calzado'],price:179900,color:'#e8e8df',mark:'#1d2a20',band:'#cbf45b',number:'',tag:'CALZADO',image:'assets/images/tennis-shoes.jpg',imageAlt:'Tenis blancos para jugar sobre una cancha de arcilla',photoCredit:'cottonbro studio · Pexels',photoUrl:'https://www.pexels.com/photo/person-standing-by-basket-with-balls-at-tennis-court-5741049/',description:'Referencia visual de calzado de cancha junto a pelotas de tenis. Producto y precio de muestra.'},
   {id:'tenis-court',name:'Kit de tenis',subtitle:'Accesorios · Calzado y raqueta',category:'accesorios',price:139900,color:'#e8e8df',mark:'#1d2a20',band:'#cbf45b',number:'CJ',tag:'ACCESORIOS',image:'assets/images/tennis-accessories.jpg',imageAlt:'Tenis deportivos, raqueta y pelota sobre una cancha de arcilla',photoCredit:'Rachel Brooks · Pexels',photoUrl:'https://www.pexels.com/photo/trendy-tennis-aesthetic-with-fashion-accessories-32564811/',description:'Fotografía de referencia de accesorios de tenis. El contenido y precio del producto son de muestra.'},
   {id:'medias-cancha',name:'Medias de juego',subtitle:'Medias deportivas · Caña alta',category:'accesorios',price:24900,color:'#222b3d',mark:'#f3eee0',band:'#ff7048',number:'01',tag:'ACCESORIOS',pattern:'product-socks'},
   {id:'balon-neo',name:'Balón Neo Control',subtitle:'Balón de fútbol · Diseño moderno',category:'accesorios',price:82900,color:'#f3eee0',mark:'#202a25',band:'#202a25',number:'',tag:'BALÓN FÚTBOL',pattern:'product-ball soccerball',image:'assets/images/ball-football.jpg',imageAlt:'Balón de fútbol fotografiado sobre césped',photoCredit:'Hasnain Ali · Pexels',photoUrl:'https://www.pexels.com/photo/soccer-ball-on-green-field-close-up-37234016/',description:'Fotografía de referencia de un balón en el campo. Diseño y precio de muestra.'},
@@ -36,7 +38,7 @@ const spacePhotos = {
   ],
   paintball: [{src:'assets/images/paintball-campo.jpg',alt:'Campo de paintball con obstáculos inflables de colores',credit:'Amar Preciado · Pexels',url:'https://www.pexels.com/photo/obstacles-on-a-paintball-playing-field-15449209/'}]
 };
-const categoryNames = {futbol:'FÚTBOL',baloncesto:'BALONCESTO',beisbol:'BÉISBOL',natacion:'NATACIÓN',atletismo:'ATLETISMO',voleibol:'VOLEIBOL',tenis:'TENIS',paintball:'PAINTBALL',accesorios:'ACCESORIOS'};
+const categoryNames = {futbol:'FÚTBOL',baloncesto:'BALONCESTO',beisbol:'BÉISBOL',natacion:'NATACIÓN',atletismo:'ATLETISMO',voleibol:'VOLEIBOL',tenis:'TENIS',calzado:'CALZADO',paintball:'PAINTBALL',accesorios:'ACCESORIOS'};
 
 const spaces = [
   {id:'futbol',name:'Cancha de fútbol',group:'cancha',location:'CANCHA ABIERTA',description:'Vista del campo, líneas de juego y áreas de meta.',art:'<svg viewBox="0 0 800 480" aria-hidden="true"><rect x="40" y="35" width="720" height="410" rx="5" fill="#347849"/><path d="M40 35h720v410H40zM400 35v410M40 240h720" fill="none" stroke="#e7edd5" stroke-width="5"/><circle cx="400" cy="240" r="68" fill="none" stroke="#e7edd5" stroke-width="5"/><circle cx="400" cy="240" r="5" fill="#e7edd5"/><path d="M40 145h105v190H40m720-190H655v190h105M40 185h48v110H40m720-110h-48v110h48" fill="none" stroke="#e7edd5" stroke-width="5"/><path d="M120 35v410M205 35v410M290 35v410M510 35v410M595 35v410M680 35v410" stroke="#ffffff10" stroke-width="36"/></svg>'},
@@ -145,7 +147,7 @@ spaceViewControls.addEventListener('click', (event) => {
 
 const grid = document.querySelector('#product-grid');
 const search = document.querySelector('#product-search');
-const filters = document.querySelectorAll('.filter-btn');
+const filters = document.querySelectorAll('[data-category-filter]');
 const count = document.querySelector('#cart-count');
 const toastElement = document.querySelector('#cart-toast');
 const cartModalElement = document.querySelector('#cart-modal');
@@ -170,7 +172,7 @@ function productCard(product) {
 
 function renderProducts() {
   const query = search.value.trim().toLocaleLowerCase('es');
-  const shown = products.filter((product) => (activeCategory==='todos'||product.category===activeCategory) && `${product.name} ${product.subtitle} ${product.tag} ${product.description||''}`.toLocaleLowerCase('es').includes(query));
+  const shown = products.filter((product) => (activeCategory==='todos'||product.category===activeCategory||product.extraCategories?.includes(activeCategory)) && `${product.name} ${product.subtitle} ${product.tag} ${product.description||''}`.toLocaleLowerCase('es').includes(query));
   grid.innerHTML = shown.length ? shown.map(productCard).join('') : '<p class="empty-state">No encontramos productos con ese nombre. Prueba otra búsqueda.</p>';
 }
 

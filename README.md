@@ -21,7 +21,7 @@ No se necesita instalar paquetes ni compilar el proyecto. La sección de contact
 
 - Carrusel automático de conceptos de selecciones: Colombia, Brasil, Argentina, México y Cabo Verde. Se puede controlar con flechas, indicadores, teclado y gestos táctiles; respeta la preferencia `prefers-reduced-motion`.
 - Galería con fotografías reales de fútbol, baloncesto, béisbol, natación, atletismo, voleibol, tenis y paintball. El tenis incluye tres fotos de canchas desde distintos puntos de vista; todos los espacios también tienen modelos ilustrados con vistas aérea, desde la tribuna e isométrica.
-- Catálogo con búsqueda y filtros por deporte y accesorios (tenis deportivos, medias y balones).
+- Catálogo con búsqueda y filtros por deporte, calzado y accesorios (tenis de cancha, guayos, medias y balones).
 - Categoría de paintball con descripciones de muestra para marcadora deportiva, máscara, chaleco y accesorios.
 - Agenda de demostración para solicitar horarios de canchas, pista, piscina y campo de paintball. Comprueba conflictos solo con solicitudes guardadas en el mismo navegador.
 - Selección local de productos, cantidades y total de muestra.
@@ -75,5 +75,7 @@ Las fotos de la galería y de algunos accesorios se descargaron localmente desde
 - Paintball: [Amar Preciado](https://www.pexels.com/photo/obstacles-on-a-paintball-playing-field-15449209/)
 - Tenis: [Nightingale](https://www.pexels.com/photo/empty-blue-tennis-court-at-melbourne-s-kia-arena-30011221/), [Luis Flores](https://www.pexels.com/photo/tennis-court-on-stadium-15397232/) y [Ceren Büşra Sevtekin](https://www.pexels.com/photo/outdoor-tennis-court-with-seating-and-lights-35564300/)
 - Accesorios de tenis: [Rachel Brooks](https://www.pexels.com/photo/trendy-tennis-aesthetic-with-fashion-accessories-32564811/)
+- Tenis de cancha: [cottonbro studio](https://www.pexels.com/photo/person-standing-by-basket-with-balls-at-tennis-court-5741049/)
+- Guayos de fútbol: [Muhammed Ali Önem](https://www.pexels.com/photo/close-up-of-football-boots-on-grass-field-32962876/)
 - Balón de fútbol: [Hasnain Ali](https://www.pexels.com/photo/soccer-ball-on-green-field-close-up-37234016/)
 - [Licencia oficial de Pexels](https://www.pexels.com/license/)
